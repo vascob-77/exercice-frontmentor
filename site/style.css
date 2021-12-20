@@ -45,19 +45,55 @@ body{
     margin:35px;
 }
 
+.img{
+    position: relative;
+}
+
+
 img{
     border-radius: 20px;
     width: auto;
     height: 410px;
-    
+    background:none;
+
+}
+
+.icon-view{
+    opacity: 0;
+    height: 200px;
+    width: 200px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img:hover .icon-view{
+    opacity:0.7 !important;
+    filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+    opacity: 1;
+}
+
+.img:hover{
+    opacity:0.7 !important;
+    filter:alpha(opacity=70) !important; /* For IE8 and earlier */
 }
 
 .equilibrum{
     margin:35px 0;
+    width: auto;
     color:white;
     font-weight: 400;
     font-family: 'Outfit', sans-serif;
     font-size: 1.4rem;
+}
+
+.equi:hover{
+    display: inline;
+    color:var(--main-cyan);
 }
 
 .description{
@@ -109,11 +145,17 @@ hr{
 .footer-card .text-creation{
     margin-left:20px;
     color:var(--main-blue);
+    
 }
 
 .footer-card .createur{
     padding-left: 8px;
     color:var(--white);
+    
+}
+.footer-card .createur:hover{
+    display: inline;
+    color:var(--main-cyan);
 }
 
 @media (max-width:712px){
