@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    /* Primary */
+    --main-blue: hsl(215,51%,70%);
+    --main-cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --very-dark-blue-main-bg:hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg:hsl(216, 50%, 16%);
+    --very-dark-blue-line:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color:var(--very-dark-blue-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    font-size: 18px;
+}
+
+.card{
+    box-shadow: hsla(0, 0%, 0%, 0.219) 0px 5px 35px;
+    position: relative;
+    height: auto;
+    background: var(--very-dark-blue-card-bg);
+    border-radius: 20px;
+    width: 480px;
+}
+
+.card-container{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    margin:35px;
+}
+
+img{
+    border-radius: 20px;
+    width: auto;
+    height: 410px;
+    
+}
+
+.equilibrum{
+    margin:35px 0;
+    color:white;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+}
+
+.description{
+    padding-top:35px;
+    color:var(--main-blue);
+}
+
+.info-eth-days{
+    display: flex;
+    justify-content: space-between;
+}
+
+svg{
+    position: relative;
+    top:3px;
+    margin-right: 10px;
+}
+
+.info-eth-days > *{
+    font-size: 1.2rem;
+}
+
+.ethereum{
+    color:var(--main-cyan);
+}
+
+.days-left{
+    color:var(--main-blue);
+}
+
+hr{
+    margin-top:35px;
+    height: 0.1px;
+	border: 0;
+	background-color: rgba(128, 128, 128, 0.356);
+}
+
+.footer-card{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-card img{
+    height: 40px;
+    width: 40px;
+}
+
+.footer-card .text-creation{
+    margin-left:20px;
+    color:var(--main-blue);
+}
+
+.footer-card .createur{
+    padding-left: 8px;
+    color:var(--white);
+}
+
+@media (max-width:712px){
+    .card{
+        margin: 25px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
